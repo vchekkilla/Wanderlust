@@ -107,6 +107,9 @@ app.use("/listings",listingRouter);
 app.use("/listings/:id/reviews",reviewRouter);
 app.use("/",userRouter);
 
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
 
 // Static Info Pages
 app.get("/privacy", (req, res) => {
@@ -116,6 +119,7 @@ app.get("/privacy", (req, res) => {
 app.get("/terms", (req, res) => {
   res.render("includes/terms");
 });
+
 
 //Middleware for wrong path-bad request 404 error 
 app.use((req,res,next)=>{
