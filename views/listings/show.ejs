@@ -93,18 +93,6 @@
        <p class="starability-result card-text" data-rating="<%=review.rating%>"></p>
       <p class="card-text"><%=review.comment%></p>
 
-      <!--now-->
-      <p class="text-muted small mb-2">
-  Reviewed on <%= new Date(review.createdAt).toLocaleString('en-IN', {
-    timeZone: 'Asia/Kolkata',
-    day: 'numeric',
-    month: 'short',
-    year: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit'
-  }) %>
-</p>
-
 
       <% if (currUser && review.author && review.author._id.equals(currUser._id)) { %>
         <form class="mb-3" action="/listings/<%= listing.id %>/reviews/<%=review._id%>?_method=DELETE" method="POST">
