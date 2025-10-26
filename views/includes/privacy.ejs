@@ -1,0 +1,125 @@
+<% layout("/layouts/boilerplate") %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy | Wanderlust</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 850px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px 35px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      color: #333;
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    h2 {
+      color: #444;
+      font-size: 1.1rem;
+      margin-top: 25px;
+      margin-bottom: 8px;
+    }
+    p, li {
+      color: #555;
+      line-height: 1.5;
+      font-size: 0.88rem;
+      margin-bottom: 10px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+      font-size: 0.88rem;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p><strong>Last updated:</strong> <%= new Date().toLocaleDateString() %></p>
+
+    <p>
+      Welcome to <strong>Wanderlust</strong>. We value your privacy and are committed to protecting your personal information. 
+      This Privacy Policy explains how we collect and use your data when you interact with our platform.
+    </p>
+
+    <h2>1. Information We Collect</h2>
+    <p>
+      We collect only the information necessary to provide our services, including:
+    </p>
+    <ul>
+      <li>Your name, username, and email address during registration.</li>
+      <li>Details related to listings and reviews you create, such as titles, descriptions, and uploaded images.</li>
+      <li>Location data associated with listings to display accurate map results.</li>
+    </ul>
+
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>To allow users to create, edit, and manage property listings.</li>
+      <li>To show location-based maps for listings.</li>
+      <li>To enable users to post and view reviews.</li>
+      <li>To ensure secure authentication and account management.</li>
+    </ul>
+
+    <h2>3. Cookies</h2>
+    <p>
+      We use cookies to maintain login sessions and enhance your experience on Wanderlust. 
+      You may disable cookies in your browser settings, though some site features may not function properly without them.
+    </p>
+
+    <h2>4. Third-Party Services</h2>
+    <p>
+      We rely on a few trusted third-party services to make Wanderlust functional and efficient:
+    </p>
+    <ul>
+      <li><strong>Cloudinary</strong> – securely stores and optimizes user-uploaded images in the cloud.</li>
+      <li><strong>Mapbox</strong> – displays map data for listings to enhance discovery.</li>
+    </ul>
+    <p>
+      These services follow their own privacy policies, which we encourage you to review.
+    </p>
+
+    <h2>5. Updates to This Policy</h2>
+    <p>
+      We may occasionally revise this Privacy Policy to reflect changes in our practices. 
+      Updates will appear on this page along with the updated date shown above.
+    </p>
+
+    <h2 class="mt-4">About This Project</h2>
+    <p>
+      Wanderlust is a personal project created out of a passion for full-stack development and travel.  
+      I've built this as part of my learning journey as a <b>4th-year Computer Science Engineering student.</b> 
+      It combines design, code, and functionality to create a practical platform for sharing travel listings, reviews & making it
+      engaging for users.
+      I’m truly grateful that you’re taking the time to explore it.  
+      <br><br>
+      Feel free to connect or share your thoughts with me on 
+      <a href="https://www.instagram.com/vish_chekkilla" target="_blank" rel="noopener noreferrer">Instagram</a>.
+    </p>
+
+    <br>
+    <p class="mt-4 text-center">
+      <a href="/listings" class="text-decoration-none">&larr; Back to Exploring</a>
+    </p>
+  </div>
+</body>
+</html>

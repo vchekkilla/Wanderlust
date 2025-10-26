@@ -1,0 +1,287 @@
+
+body{
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+    flex:1;
+}
+
+
+/* Navbar */
+.navbar {
+height:5rem;
+background-color: white;
+}
+/* Styling navbar icon & navbar options*/
+.fa-compass{
+color:#fe424d;
+font-size:2rem;
+}
+.nav-link{
+color:#222222 !important;
+} 
+.f-info-links a{
+    text-decoration: none;
+    color:#222222b6;
+}
+.f-info-links a:hover{
+    text-decoration: underline;  
+}
+.f-info{
+    text-align: center;
+    height: 8rem;
+    background-color: #ebebeb;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: space-evenly;
+}
+.f-info-links,.f-info-socials,.f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right:1rem;
+}
+/*Card styling */
+.listing-card {
+border: none !important;
+margin-bottom: 2rem;
+}
+.card-img-top {
+    border-radius: 1rem !important;
+    width:100% !important;
+    object-fit: cover !important;
+
+}
+.card-body {
+    padding: 0 !important;
+}
+.card-text p {
+font-weight:400 !important;
+}
+.listing-link {
+    text-decoration: none;
+}
+/* Card Effect */
+.card-img-overlay {
+    opacity: 0;
+}
+.card-img-overlay:hover  {
+    opacity:0.2;
+    background-color: white;
+}
+.add-btn {
+    background-color: #fe424d !important;
+    border:none !important;
+}
+.edit-btn {
+    background-color: #fe424d !important;
+    border: none !important;
+
+}
+
+.show-img {
+    height: 30vh;
+}
+.btns {
+    display:flex;
+
+}
+.show-card {
+    padding-left:0;
+    padding-right:0;
+}
+
+/* V */
+form {
+  padding-bottom: 50px; 
+}
+
+/* V*/
+.edit-btn,
+.delete-btn {
+  min-width: 120px;   /* same width */
+  height: 45px;       /* same height */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*v*/
+.thumb-wrapper {
+  width: 250px;
+  height: 180px;
+  overflow: hidden;
+  border-radius: 12px;     /* round container */
+}
+.thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;     /* round image */
+  display: block;
+}
+
+/*map*/
+#map { 
+    height: 400px;
+    width: 80vh;
+     }
+
+     
+@media (max-width: 576px) {
+  
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  
+  .searchbar form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    width: 100%;
+  }
+
+  .search-inp {
+    width: 10rem;
+    flex: 1;
+    font-size: 0.85rem;
+  }
+
+  .search-btn {
+    padding: 0.35rem 0.8rem;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .searchbar form {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .search-inp {
+    width: 13rem;
+  }
+}
+@media (max-width: 992px) {
+  .searchbar {
+    margin-top: 1.5rem;
+  }
+}
+
+
+body {
+  padding-top: 5rem; 
+}
+
+/* When navbar is expanded on small screens */
+@media (max-width: 768px) {
+  body {
+    padding-top: 7rem; 
+  }
+
+  .navbar-collapse.show {
+    position: relative;
+    z-index: 1000;
+    background-color: white; 
+    margin-bottom: 1rem;
+  }
+}
+
+/* Fix for tablets & phones */
+@media (max-width: 992px) {
+  #map {
+    width: 100%;       /* make it fit container width on smaller screens */
+    height: 300px;     /* slightly shorter for mobile */
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* REVIEW CARD */
+@media (max-width: 768px) {
+  .row .card.col-5 {
+    width: 90% !important;
+    margin: 0 auto 1rem auto !important;
+  }
+
+  .card-body h5.card-title {
+    font-size: 1rem;
+  }
+
+  .card-body .starability-result {
+    display: inline-block;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    white-space: nowrap;
+  }
+
+  .card-body .btn {
+    display: block;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Social Icon Colors */
+.f-info-socials .fa-square-instagram {
+  background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+  color: #E1306C; /* fallback for environments without gradient support */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Facebook Blue */
+.f-info-socials .fa-square-facebook {
+  color: #1877F2;
+}
+
+/* LinkedIn Blue */
+.f-info-socials .fa-linkedin {
+  color: #0A66C2;
+}
+
+/*  Soft glow on hover */
+.f-info-socials i:hover {
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.2));
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+
+
